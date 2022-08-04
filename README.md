@@ -1,1 +1,1 @@
-# Segmentify-Frontend-Developer-task
+# Frontend-Developer-task
