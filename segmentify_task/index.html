@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segmentify Projesi</title>
+
+    <!-- gerekli dosyaların tanımlandığı alan(bootstrap, jquery, css, stil dosyaları)  -->
+
+    <link rel="stylesheet" href="style/style.css" /><!-- ana css dosyası -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /><!-- bootstrap toolkiti  -->
+    <link rel="stylesheet" href="style/swiper-bundle.css" /><!-- swiper css dosyası  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/b9fcac3324.js"
+      crossorigin="anonymous"
+    ></script><!-- icon görsellerinin çekildiği site  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script><!-- jquery dosyası  -->
+  </head>
+
+  <body>
+    <section class="container vh-100 position-relative">
+      <div class="category-tab-area bg-white py-4 rounded">
+        <div class="category-tab-head mb-4 px-4">
+          <span class="h4">Sizin İçin Seçtiklerimiz</span>
+        </div>
+        <div class="category-tab-body px-3">
+          <div class="row">
+            <!-- kategori sütunu -->
+
+            <div class="col-lg-2 col-12">
+              <ul
+                class="category-nav nav nav-pills nav-fill flex-lg-column"
+              ></ul>
+            </div>
+
+            <!-- ürünlerin sergilendiği bölüm -->
+
+            <div class="col-lg-10 col-12 pe-0">
+              <div class="swiper-container py-2">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- pop-up mesajın tasarlandığı bölüm -->
+
+      <div
+        class="toast align-items-center position-absolute py-2 px-1"
+        role="alert"
+        id="toast"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body d-flex">
+            <i class="fas fa-check my-auto p-2 rounded-circle fs-6"></i>
+            <div class="toast-message d-inline my-auto mx-3">
+              <span class="toast-title text-white"> Ürün sepete eklendi. </span>
+              <br />
+              <a href="#" class="h7 text-white"> Sepete Git </a>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn me-2 m-auto close-btn"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/data-binding.js"></script>
+  </body>
+</html>

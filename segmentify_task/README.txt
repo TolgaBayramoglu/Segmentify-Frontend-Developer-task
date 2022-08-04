@@ -1,0 +1,1 @@
+Lütfen index.html dosyasını Live Server adlı uzantı ile açınız.
